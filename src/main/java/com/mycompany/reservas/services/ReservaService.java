@@ -14,7 +14,7 @@ import com.mycompany.reservas.models.Reserva;
  */
 public class ReservaService 
 {
-    public ReservaService(Cliente cliente, Hotel hotel, Habitacion habitacion) 
+    public void agregarReserva(Cliente cliente, Hotel hotel, Habitacion habitacion) 
     {
         if(habitacion.isDisponible()){
             Reserva reserva = new Reserva(hotel, habitacion);
